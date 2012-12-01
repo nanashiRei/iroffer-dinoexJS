@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html xmlns:ng="http://angularjs.org" lang="en">
+<head>
+    <title>iroffer-dinoexJS</title>
+
+    <!-- We can use this, or compile our own version later if we want to change stuff -->
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/css/bootstrap.no-responsive.no-icons.min.css"
+          rel="stylesheet">
+    <!-- Way more icons, way less loadtime -->
+    <link href="//netdna.bootstrapcdn.com/font-awesome/2.0/css/font-awesome.css" rel="stylesheet">
+
+    <!-- Most awesome font ever, if you don't like it suggest something -->
+    <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500" rel="stylesheet" type="text/css">
+
+    <!-- app.css -->
+    <link href="css/app.css" rel="stylesheet">
+
+    <!-- CDN JavaScripts -->
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular.js"></script>
+    <!-- use minified angular.min.js after testing -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/css3finalize/3.1/jquery.css3finalize.min.js"></script>
+
+    <!-- App / Module / Controllers -->
+    <script src="js/app.js"></script>
+    <!-- ... add more -->
+</head>
+<body ng-app="irofferDinoexJs">
+<header>
+    <div class="container-fluid">
+        <div class="page-header">
+            <h1>iroffer-dinoexJS</h1>
+        </div>
+    </div>
+</header>
+
+
+<section id="master">
+    <div class="container-fluid">
+        <div class="row-fluid">
+
+
+            <div class="span2"><!-- menu? --></div>
+
+
+            <div class="span10">
+                <ng-view>
+                    <!-- nothing go in here, see: app.js -->
+                </ng-view>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+
+
+<footer>
+    <div class="container-fluid">
+        <ul class="nav nav-pills">
+            <li><a href="https://github.com/nanashiRei/iroffer-dinoexJS">Source</a></li>
+            <li>Enjoy!</li>
+        </ul>
+    </div>
+</footer>
+</body>
+</html>
